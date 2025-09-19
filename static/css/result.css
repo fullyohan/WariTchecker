@@ -1,5 +1,5 @@
 :root {
---primary: #4361ee;
+--primary: #eab581;
 --secondary: #3a0ca3;
 --accent: #f72585;
 --success: #4cc9f0;
@@ -27,7 +27,6 @@ color: var(--dark);
 display: flex;
 justify-content: between;
 align-items: center;
-margin-bottom: 25px;
 gap: 20px;
 }
 
@@ -258,4 +257,84 @@ justify-content: center;
 h1 {
     font-size: 2.2em;
 }
+}
+
+
+
+
+form{
+    width:100%; 
+    max-width:600px; 
+    position:relative;
+    margin-left: 30%;
+}
+.search-bar{
+    display: flex; 
+    align-items: center; 
+    background: white; 
+    border-radius: 30px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+    padding: 8px 20px;
+}
+
+.search-bar input{
+    border:none; 
+    outline:none; 
+    font-size:1.3em; 
+    flex:1; 
+    background:transparent; 
+    padding:10px;
+}
+.search-bar i {
+    color: #b0b0b0; 
+    font-size: 1.2em; 
+    margin-right: 10px;
+}
+
+#dropdownToggle{
+    background:none; 
+    border:none; 
+    margin-left:10px; 
+    cursor:pointer;
+}
+#advancedDropdown{
+    display:none; 
+    position:absolute; 
+    left:0; 
+    right:0; 
+    top:60px; 
+    background:white; 
+    box-shadow:0 2px 8px rgba(0,0,0,0.08); 
+    border-radius:20px; 
+    padding:20px; 
+    z-index:10;
+}
+.dropdown-toggle{
+    width:100%; 
+    background : none; 
+    border-width: 1.2px;
+    text-align: left;
+}
+.form-group{
+    margin-bottom:15px;
+}
+.btns{
+    display: flex; 
+    justify-content: center; 
+    gap: 12px; 
+    margin-top: 30px;
+}
+#btn-primary{
+   display: none;
+}
+
+
+#dropdown-menu{
+    border-radius: 1px; 
+    border-width:1px; 
+    border-color:black;
+}
+
+.form-check{
+    margin-left: 10px;
 }
